@@ -1,0 +1,24 @@
+<p>student works!</p>
+
+<button [disabled]="isDisable" (click)="onButtonClick()" >Click Me</button>
+
+<input type="text" [(ngModel)]="firstname" name="firstname" />
+{{firstname}}
+
+<input type="text" [value]="city" name="city" />
+{{city}}
+
+<h1>Countries</h1>
+<ol>
+    <li *ngFor="let country of countries" value="">{{country}}</li>
+</ol>
+
+<select>
+    <option *ngFor="let country of countries">{{country}}</option>
+</select>
+
+<br>
+
+<img src={{imageurl}} height="230px" />
+
+<h1>{{ stud.fnm | uppercase }} {{ stud.lnm | lowercase}}</h1>
